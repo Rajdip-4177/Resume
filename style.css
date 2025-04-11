@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #333; /* Dark gray */
+    color: #ffcc00; /* Golden text */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ffcc00;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* About Section */
+main h2 {
+    color: #ffcc00;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+main p {
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+}
+
+/* Skills Section */
+pre ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+}
+
+pre ul li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+}
+
+pre ul li::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.skill-bar {
+    position: relative;
+    width: 80%;
+    height: 20px;
+    background-color: #333;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    background-color: #ffcc00;
+    border-radius: 10px;
+}
+
+/* Individual Skill Levels */
+.skill-html span {
+    width: 80%;
+}
+
+.skill-css span {
+    width: 50%;
+}
+
+.skill-js span {
+    width: 60%;
+}
+
+.skill-react span {
+    width: 100%;
+}
+
+.skill-node span {
+    width: 70%;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+thead th {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+tfoot td {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #ffcc00;
+    font-weight: bold;
+    border: 1px solid #444;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    table, pre ul {
+        width: 95%;
+    }
+}
